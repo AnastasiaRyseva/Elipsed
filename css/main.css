@@ -1,0 +1,182 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #ffffff;
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 3600px;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* шапка сайта */
+
+.header__logo {
+    padding-top: 30px;
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-top: 45px;
+    margin-left: 45px;
+}
+
+.header__menu li {
+    margin: 0 20px;
+}
+
+.header__menu a {
+    color: #616161;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* основное содержимое */
+
+.text {
+    color: #616161;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.promo {
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.promo span {
+    background-image: linear-gradient(to right, #fb973b 0%, #fb973b 100%);
+    background-repeat: repeat-x; 
+    background-position: 0 75%; 
+    background-size: 100% 10px;
+}
+
+.text span {
+    color: #fb973b;
+    font-weight: bold;
+}
+
+.main__promo_offer {
+    margin-top: 105px;
+    width: 950px;
+}
+
+.main__promo_text {
+    width: 35%;
+}
+
+.btn {
+    background-color: #fb973b;
+    color: white;
+    width: 200px;
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+    width: 200px;
+}
+
+.main__backgroundImage {
+    background-image: url(../assets/Cow.png);
+    background-repeat: no-repeat;
+    height: 638px;
+    background-size: 960px;
+    background-position-x: 95%;
+    background-position-y: 15px;
+}
+
+
+/* основное содержимое. о компании */
+.main__description {
+    margin-top: 100px;
+}
+
+.description-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main__description_text {
+    text-align: center;
+    color: #141419;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.icon {
+    margin: 20px 0;
+}
+
+
+/* медиа-запросы */
+
+/*шапка сайта*/
+
+@media screen and (max-width: 991px) {
+    .header__menu {
+        padding-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* основное содержимое */
+
+
+@media screen and (max-width: 735px) {
+    .text {
+        font-size: 14px;
+    }
+    .promo {
+        font-size: 30px;
+    }
+    .main__promo_offer {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 935px) {
+    .main__backgroundImage {
+        background-size: 600px;
+        background-position-x: 170px;
+        background-position-y: 87px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .main__backgroundImage {
+        background-size: 300px;
+        background-position-x: 230px;
+        background-position-y: 270px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .main__backgroundImage {
+        background-position-y: 380px;
+        height: 538px;
+    }
+}
+
+/* основное содержимое. о компании */
+
+@media screen and (max-width: 535px) {
+    .main__description_img {
+        width: 50%;
+    }
+
+    .main__description_text {
+        font-size: 16px;
+    }
+}
